@@ -6,6 +6,27 @@ body {
     overflow-y: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+.mobile-message {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.mobile-message p {
+    width: 60vw;
+}
+
+@media screen and (max-width: 700px) {
+  .slack-app {display: none;}
+  .mobile-message {display: flex;}
+}
+
 .top-nav {
     background-color: rgb(50, 15, 50);
     text-align: center;
@@ -333,14 +354,26 @@ body {
     margin: 0;
 
 }
+#channel-pins div {
+    display: inline-block;
+}
+
 #channel-pins p {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 200;
     color: gray;
     margin: 0;
-    margin-right: 8px;
+    margin-left: 2px;
     display: inline-block;
 }
+
+#channel-pins img {
+    display: inline-block;
+    width: 10px;
+    opacity: 0.6;
+    transform: scaleX(-1);
+}
+
 #channel-content {
     padding:0px;
     margin: 0px;
