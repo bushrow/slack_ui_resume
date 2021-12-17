@@ -475,7 +475,11 @@ a {
 
 .message-clean .message-text ul {
     margin-top: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+}
+.message-clean .message-text .section-tag {
+    margin: 0;
+    margin-top: 10px;
 }
 
 .skills-certs {
